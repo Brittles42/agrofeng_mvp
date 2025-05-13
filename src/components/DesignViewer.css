@@ -1,0 +1,285 @@
+.design-viewer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.design-viewer h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.empty-state p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Generation progress */
+.generating {
+  text-align: center;
+}
+
+.generation-progress {
+  margin: 30px 0;
+}
+
+.progress-bar {
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.generation-steps {
+  max-width: 600px;
+  margin: 30px auto;
+  text-align: left;
+}
+
+.step {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: #888;
+  transition: all 0.3s ease;
+}
+
+.step.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Time selector */
+.time-selector {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.time-btn {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.time-btn.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Design visualization */
+.design-visualization {
+  margin-bottom: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.visualization-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+}
+
+.viz-toggle {
+  padding: 8px 15px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.viz-toggle.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.viz-info {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.terrain-3d-container {
+  height: 400px;
+  width: 100%;
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+.terrain-3d-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+.visualization-placeholder {
+  height: 400px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.placeholder-note {
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Design details */
+.design-details {
+  margin-bottom: 40px;
+}
+
+.climate-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: rgba(76, 175, 80, 0.1);
+  border-radius: 8px;
+}
+
+.info-badge {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.badge-label {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.badge-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.climate-note {
+  flex: 1;
+  margin: 0;
+  color: #555;
+  font-style: italic;
+  min-width: 200px;
+}
+
+.feng-shui-card {
+  border-left: 4px solid var(--accent-color);
+}
+
+.feng-shui-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.compact-list {
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.compact-list li {
+  margin-bottom: 3px;
+  font-size: 0.9rem;
+}
+
+.design-details h3 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.element-section {
+  margin-bottom: 30px;
+}
+
+.element-section h4 {
+  margin-bottom: 15px;
+  color: var(--secondary-color);
+}
+
+.elements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.element-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.element-card h5 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.plants-list {
+  margin-top: 10px;
+}
+
+.plants-list ul {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+/* Design actions */
+.design-actions {
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .time-selector {
+    flex-direction: row;
+    overflow-x: auto;
+  }
+  
+  .time-btn {
+    flex: 1;
+    min-width: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .elements-grid {
+    grid-template-columns: 1fr;
+  }
+}
